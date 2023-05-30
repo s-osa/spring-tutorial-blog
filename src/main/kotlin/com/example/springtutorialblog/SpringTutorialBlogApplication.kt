@@ -1,5 +1,6 @@
 package com.example.springtutorialblog
 
+import org.springframework.boot.Banner
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
 
@@ -7,5 +8,7 @@ import org.springframework.boot.runApplication
 class SpringTutorialBlogApplication
 
 fun main(args: Array<String>) {
-    runApplication<SpringTutorialBlogApplication>(*args)
+    runApplication<SpringTutorialBlogApplication>(*args) {
+        setBannerMode(Banner.Mode.OFF)
+    }
 }
